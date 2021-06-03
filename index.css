@@ -36,27 +36,27 @@ blockquote, q {
 	quotes: "" "";
 	}
 
-*{
+/**{
     box-sizing:border-box;
     padding:0;
     margin:0;
     max-width:100%;
     border:1px solid grey;
-}
+}*/
 
 /*General Styles*/
 html{
     font-size:62.5%;
 }
 body{
-    font-size:1.6rem;
+    font-size:.9rem;
     line-height:1.5;
     color:#4f4f4f; /*easier to read than black on white*/
     font-family: 'Roboto Mono', monospace;
 }
 h1{
     font-family: 'Chelsea Market', cursive;
-    font-size:5rem;
+    font-size:4rem;
 }
 section{
     padding:2% 0;
@@ -106,14 +106,16 @@ nav a{
     width:45%;
     margin-left:3%;
     position:absolute;
-    top:20%; 
+    top:20%; left:40%;
     text-align:center;
 }
 h2{
     padding:4%;
+    font-size:1.3rem
 }
 .right p{
-    padding:0 20%;
+    padding:0 15%;
+    font-size:1.3rem;
 }
 /*pink section*/
 .pink{
@@ -122,25 +124,32 @@ h2{
 }
 .pink p{
     color:#fff;
-    padding:1% 2%;
+    padding:2% 7%;
     text-align:center;
+    font-size:1.3rem;
 }
 
 /*clip art section*/
-.clipart{
+.clipart div{
     text-align:center;
+    margin:0 35%;
 }
 .clipart img{
-    width:10%
+    width:40%;
+}
+.clipart p{
+    padding:5%;
 }
 
 /*background image section*/
 
 .heroImg{
-    height:50vh;
     background-image:url('assets/footer_img.jpg');
+    object-fit:cover;
+    height:40vh;
     background-repeat: no-repeat;
     background-size:cover;
-    background-position:top;
+    background-position:0 20%;
+    height:210px;
     width:100%;
 }
